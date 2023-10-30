@@ -1,0 +1,221 @@
+<ui version="4.0" >
+ <class>RaporUyeler</class>
+ <widget class="QWidget" name="RaporUyeler" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Raporlar</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>:/ikonlar/uyelist.png</normaloff>:/ikonlar/uyelist.png</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" >
+   <item row="0" column="0" >
+    <widget class="QSplitter" name="splitter" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QFrame" name="frame" >
+      <property name="maximumSize" >
+       <size>
+        <width>167</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="frameShape" >
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2" >
+       <item row="0" column="0" >
+        <widget class="QTreeWidget" name="raporTreeWidget" >
+         <property name="styleSheet" >
+          <string notr="true" >background-color: rgb(225, 226, 170);</string>
+         </property>
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="animated" >
+          <bool>true</bool>
+         </property>
+         <column>
+          <property name="text" >
+           <string>Raporlar</string>
+          </property>
+         </column>
+         <item>
+          <property name="text" >
+           <string>Hazır Raporlar</string>
+          </property>
+          <item>
+           <property name="text" >
+            <string>Üye</string>
+           </property>
+           <item>
+            <property name="text" >
+             <string>Üyeler Listesi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>En Çok Okuyan Üyeler Listesi</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text" >
+            <string>Kitap</string>
+           </property>
+           <item>
+            <property name="text" >
+             <string>Kitap Listesi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>En Çok Okunan Kitap Listesi</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Getirilmeyen Kitaplar</string>
+            </property>
+           </item>
+           <item>
+            <property name="text" >
+             <string>Getirilmeyen Günü Geçmiş Kitaplar</string>
+            </property>
+           </item>
+          </item>
+         </item>
+         <item>
+          <property name="text" >
+           <string>Kullanıcı Raporları</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QFrame" name="frame_2" >
+      <property name="frameShape" >
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow" >
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3" >
+       <item row="0" column="0" colspan="2" >
+        <widget class="QLabel" name="label_title" >
+         <property name="styleSheet" >
+          <string notr="true" >
+font: italic 24pt "URW Chancery L";
+ border: 2px solid gray;
+             border-radius: 10px;
+             padding: 0 8px;
+             background: yellow;
+             selection-background-color: darkgray;</string>
+         </property>
+         <property name="text" >
+          <string/>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="label" >
+         <property name="frameShape" >
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="text" >
+          <string/>
+         </property>
+         <property name="pixmap" >
+          <pixmap>:/16x16/icons/16x16/actions/viewzoomin.png</pixmap>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QLineEdit" name="arama_kutusu" >
+         <property name="styleSheet" >
+          <string notr="true" >
+border-color: rgb(130, 255, 186);selection-background-color: rgb(146, 238, 74);
+selection-color: rgb(255, 255, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2" >
+        <widget class="QTableView" name="tablo" >
+         <property name="styleSheet" >
+          <string notr="true" />
+         </property>
+         <property name="horizontalScrollBarPolicy" >
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="alternatingRowColors" >
+          <bool>false</bool>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="horizontalScrollMode" >
+          <enum>QAbstractItemView::ScrollPerItem</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2" >
+        <widget class="QPushButton" name="pBYazdir" >
+         <property name="styleSheet" >
+          <string notr="true" >        QPushButton {
+             border: 2px solid #8f8f91;
+             border-radius: 6px;
+             background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                               stop: 0 #f6f7fa, stop: 1 #dadbde);
+             min-width: 80px;
+         }
+
+         QPushButton:pressed {
+             background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                               stop: 0 #dadbde, stop: 1 #f6f7fa);
+         }
+
+         QPushButton:flat {
+             border: none; / * no border for a flat push button * /
+         }
+
+         QPushButton:default {
+             border-color: navy; / * make the default button prominent * /
+         }</string>
+         </property>
+         <property name="text" >
+          <string>Yazdır</string>
+         </property>
+         <property name="icon" >
+          <iconset>
+           <normaloff>:/ikonlar/fileprint.png</normaloff>:/ikonlar/fileprint.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="ikon.qrc" />
+  <include location="tableprinterresource.qrc" />
+ </resources>
+ <connections/>
+</ui>

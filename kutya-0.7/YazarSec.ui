@@ -1,0 +1,80 @@
+<ui version="4.0" >
+ <class>FormYazarSec</class>
+ <widget class="QDialog" name="FormYazarSec" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>431</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Yazar Seç</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset/>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>Ara:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="2" >
+    <widget class="QLineEdit" name="arama_kutusu" />
+   </item>
+   <item row="1" column="0" colspan="3" >
+    <widget class="QTableView" name="tVYayinci" >
+     <property name="contextMenuPolicy" >
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3" >
+    <widget class="QPushButton" name="pBekle" >
+     <property name="text" >
+      <string>Ekle</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2" >
+    <widget class="QPushButton" name="pBTemizle" >
+     <property name="text" >
+      <string>Temizle</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" >
+    <widget class="QListWidget" name="LwSecilenler" />
+   </item>
+   <item row="4" column="0" colspan="3" >
+    <widget class="QPushButton" name="pBSec" >
+     <property name="text" >
+      <string>Seç</string>
+     </property>
+     <property name="icon" >
+      <iconset resource="ikon.qrc" >:/ikonlar/onayla.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionEkle" >
+   <property name="text" >
+    <string>Ekle</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ikon.qrc" />
+ </resources>
+ <connections/>
+</ui>

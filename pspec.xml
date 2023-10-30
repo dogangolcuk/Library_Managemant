@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE PISI SYSTEM "http://www.pardus.org.tr/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>kutya</Name>
+        <Homepage>http://code.google.com/u/dogangolcuk</Homepage>
+        <Packager>
+            <Name>Dogan Golcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Packager>
+        <License>GPL-2</License>
+        <IsA>app:gui</IsA>
+        <PartOf>applications.office</PartOf>
+        <Summary>Kütüphane/Üye Takip Yazılımı(KUTYA)</Summary>
+        <Description>Kütüphanelerde , okullarda kullanılabilicek üye, kitap takibi ve ödünç verme , alma işlemlerinizi yapabileceğiniz ,rapor alabileceğiniz Pardus işletim sistemi için kütüphane programı. </Description>
+	<Archive sha1sum="a07f6c494944a07aabf0facc87717080ed6c64d8" type="targz">/home/qwert/MyProgs/2009/Kutya/kutya-0.7.tar.gz</Archive>
+        <BuildDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>qt-sql-postgresql</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>kutya</Name>
+        <RuntimeDependencies>
+            <Dependency>qt</Dependency>
+            <Dependency>postgresql-server</Dependency>
+            <Dependency>qt-sql-postgresql</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+            <Path fileType="data">/tmp</Path>
+            <Path fileType="config">/etc</Path>
+        </Files>
+        <AdditionalFiles>
+            <AdditionalFile owner="root" permission="0644" target="/usr/share/applications/kutya.desktop">kutya.desktop</AdditionalFile>
+            <AdditionalFile owner="root" permission="0644" target="/etc/kutya.ayar">kutya.ayar</AdditionalFile>
+            <AdditionalFile owner="root" permission="0777" target="/tmp/kutyadbkur.py">kutyadbkur.py</AdditionalFile>
+	    <AdditionalFile owner="root" permission="0777" target="/tmp/kutyadbV.0.6.7.backup">kutyadbV.0.6.7.backup</AdditionalFile>
+        </AdditionalFiles>
+        <Provides>
+            <COMAR script="package.py">System.Package</COMAR>
+        </Provides>
+    </Package>
+    <History>
+        <Update release="2">
+            <Date>2011-02-20</Date>
+            <Version>0.7</Version>
+            <Comment>Yeni Sürüm</Comment>
+            <Name>dogangolcuk</Name>
+            <Email>dogangolcuk@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>

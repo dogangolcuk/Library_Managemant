@@ -1,0 +1,177 @@
+<ui version="4.0" >
+ <class>FormGeriAl</class>
+ <widget class="QWidget" name="FormGeriAl" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>536</width>
+    <height>476</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Kitap Geri Al</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>:/ikonlar/reload.png</normaloff>:/ikonlar/reload.png</iconset>
+  </property>
+  <layout class="QGridLayout" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label_3" >
+     <property name="text" >
+      <string>Ara:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" colspan="6" >
+    <widget class="QLineEdit" name="arama_kutusu" />
+   </item>
+   <item row="1" column="0" colspan="7" >
+    <widget class="QTableView" name="TvUyeler" >
+     <property name="styleSheet" >
+      <string notr="true" />
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode" >
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" >
+    <widget class="QLabel" name="label_4" >
+     <property name="pixmap" >
+      <pixmap>:/ikonlar/button_cancel.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="2" >
+    <widget class="QLabel" name="label" >
+     <property name="font" >
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+       <underline>false</underline>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Getirilmeyen Kitaplar:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="4" >
+    <widget class="QLabel" name="label_2" >
+     <property name="font" >
+      <font>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="pixmap" >
+      <pixmap>:/ikonlar/onayla.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5" >
+    <widget class="QLabel" name="label_5" >
+     <property name="font" >
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Getirilen Kitaplar:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6" >
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="0" colspan="7" >
+    <widget class="QSplitter" name="splitter" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QTableView" name="TvGetirilmeyenler" >
+      <property name="contextMenuPolicy" >
+       <enum>Qt::ActionsContextMenu</enum>
+      </property>
+      <property name="alternatingRowColors" >
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior" >
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+     <widget class="QTableView" name="TvGetirilenler" >
+      <property name="alternatingRowColors" >
+       <bool>true</bool>
+      </property>
+      <property name="selectionMode" >
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior" >
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionGetirdi" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>:/ikonlar/onayla.png</normaloff>:/ikonlar/onayla.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Getirdi</string>
+   </property>
+   <property name="iconText" >
+    <string>Getirdi</string>
+   </property>
+   <property name="toolTip" >
+    <string>Getirdi</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ikon.qrc" />
+ </resources>
+ <connections/>
+</ui>

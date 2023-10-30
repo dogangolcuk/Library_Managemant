@@ -1,0 +1,906 @@
+<ui version="4.0" >
+ <class>FormKitaplar</class>
+ <widget class="QWidget" name="FormKitaplar" >
+  <property name="enabled" >
+   <bool>true</bool>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Kitaplar</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff/>
+   </iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2" >
+   <item row="0" column="0" >
+    <widget class="QLabel" name="label_3" >
+     <property name="text" >
+      <string>&amp;Ara :</string>
+     </property>
+     <property name="buddy" >
+      <cstring>arama_kutusu</cstring>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" >
+    <widget class="QLineEdit" name="arama_kutusu" />
+   </item>
+   <item row="1" column="0" colspan="2" >
+    <widget class="QTableView" name="tablo" >
+     <property name="minimumSize" >
+      <size>
+       <width>0</width>
+       <height>162</height>
+      </size>
+     </property>
+     <property name="palette" >
+      <palette>
+       <active>
+        <colorrole role="WindowText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>253</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>210</red>
+           <green>218</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>83</red>
+           <green>90</green>
+           <blue>93</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>111</red>
+           <green>121</green>
+           <blue>124</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>211</red>
+           <green>218</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>253</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>210</red>
+           <green>218</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>83</red>
+           <green>90</green>
+           <blue>93</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>111</red>
+           <green>121</green>
+           <blue>124</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>211</red>
+           <green>218</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>83</red>
+           <green>90</green>
+           <blue>93</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>253</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Midlight" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>210</red>
+           <green>218</green>
+           <blue>220</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Dark" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>83</red>
+           <green>90</green>
+           <blue>93</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Mid" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>111</red>
+           <green>121</green>
+           <blue>124</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>83</red>
+           <green>90</green>
+           <blue>93</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="BrightText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>83</red>
+           <green>90</green>
+           <blue>93</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Shadow" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="AlternateBase" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>167</red>
+           <green>181</green>
+           <blue>186</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="mouseTracking" >
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy" >
+      <enum>Qt::ClickFocus</enum>
+     </property>
+     <property name="contextMenuPolicy" >
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="acceptDrops" >
+      <bool>false</bool>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="editTriggers" >
+      <set>QAbstractItemView::AllEditTriggers</set>
+     </property>
+     <property name="tabKeyNavigation" >
+      <bool>false</bool>
+     </property>
+     <property name="alternatingRowColors" >
+      <bool>true</bool>
+     </property>
+     <property name="selectionMode" >
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior" >
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="gridStyle" >
+      <enum>Qt::DashLine</enum>
+     </property>
+     <property name="sortingEnabled" >
+      <bool>true</bool>
+     </property>
+     <property name="cornerButtonEnabled" >
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2" >
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="title" >
+      <string>İşlemler</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="0" >
+       <widget class="QPushButton" name="pBDegistir" >
+        <property name="text" >
+         <string>Değiştir</string>
+        </property>
+        <property name="icon" >
+         <iconset>
+          <normaloff>:/ikonlar/cnr-update.png</normaloff>:/ikonlar/cnr-update.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" >
+       <widget class="QPushButton" name="pBiptal" >
+        <property name="text" >
+         <string>iPtal</string>
+        </property>
+        <property name="icon" >
+         <iconset>
+          <normaloff>:/ikonlar/edit_remove.png</normaloff>:/ikonlar/edit_remove.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" >
+       <widget class="QPushButton" name="pBSil" >
+        <property name="text" >
+         <string>Sil</string>
+        </property>
+        <property name="icon" >
+         <iconset>
+          <normaloff>:/ikonlar/eraser.png</normaloff>:/ikonlar/eraser.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" >
+       <widget class="QPushButton" name="pBKaydet" >
+        <property name="text" >
+         <string>Kaydet</string>
+        </property>
+        <property name="icon" >
+         <iconset>
+          <normaloff>:/ikonlar/filesaveas.png</normaloff>:/ikonlar/filesaveas.png</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2" >
+    <widget class="QTabWidget" name="tabWidget" >
+     <property name="currentIndex" >
+      <number>0</number>
+     </property>
+     <property name="lll" stdset="0" >
+      <string/>
+     </property>
+     <widget class="QWidget" name="tab" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>476</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <attribute name="title" >
+       <string>Genel Bilgiler</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout" >
+       <item row="0" column="0" >
+        <widget class="QLabel" name="label_2" >
+         <property name="styleSheet" >
+          <string notr="true" > QLabel {
+     border: 2px solid gray;
+     padding: 0 8px;
+     background: yellow;
+     selection-background-color: darkgray;
+ }</string>
+         </property>
+         <property name="frameShape" >
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="lineWidth" >
+          <number>9</number>
+         </property>
+         <property name="midLineWidth" >
+          <number>7</number>
+         </property>
+         <property name="text" >
+          <string>&amp;BARKOD </string>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="buddy" >
+          <cstring>LeBarkod</cstring>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2" >
+        <widget class="QLineEdit" name="LeBarkod" >
+         <property name="styleSheet" >
+          <string notr="true" > QLineEdit {
+     border: 2px solid gray;
+     border-radius: 10px;
+     padding: 0 8px;
+     background: yellow;
+     selection-background-color: darkgray;
+ }</string>
+         </property>
+         <property name="frame" >
+          <bool>true</bool>
+         </property>
+         <property name="alignment" >
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="readOnly" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2" >
+        <widget class="QGroupBox" name="groupBox_2" >
+         <property name="title" >
+          <string/>
+         </property>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="QLabel" name="label_4" >
+            <property name="text" >
+             <string>Ad:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>LeAd</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" >
+           <widget class="QLineEdit" name="LeAd" >
+            <property name="readOnly" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="label" >
+            <property name="text" >
+             <string>ISBN:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>LeIsbn</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" >
+           <widget class="QLineEdit" name="LeIsbn" >
+            <property name="readOnly" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" >
+           <widget class="QLabel" name="label_7" >
+            <property name="text" >
+             <string>Konum/Raf:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>LeRaf</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" >
+           <widget class="QLineEdit" name="LeRaf" />
+          </item>
+          <item row="3" column="0" >
+           <widget class="QLabel" name="label_10" >
+            <property name="text" >
+             <string>Kategori:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>CbKategori</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" >
+           <widget class="QComboBox" name="CbKategori" >
+            <property name="editable" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="2" >
+        <widget class="QGroupBox" name="groupBox_3" >
+         <property name="title" >
+          <string/>
+         </property>
+         <layout class="QGridLayout" >
+          <item row="0" column="0" >
+           <widget class="QLabel" name="label_5" >
+            <property name="text" >
+             <string>Baskı :</string>
+            </property>
+            <property name="buddy" >
+             <cstring>sBBaski</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1" colspan="2" >
+           <widget class="QSpinBox" name="sBBaski" >
+            <property name="suffix" >
+             <string>.</string>
+            </property>
+            <property name="prefix" >
+             <string/>
+            </property>
+            <property name="value" >
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3" >
+           <widget class="QLabel" name="label_9" >
+            <property name="text" >
+             <string>Adet:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>sBAdet</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4" >
+           <widget class="QSpinBox" name="sBAdet" >
+            <property name="value" >
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" >
+           <widget class="QLabel" name="label_8" >
+            <property name="text" >
+             <string>Yayın Tarihi:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>dETarih</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1" colspan="4" >
+           <widget class="QDateEdit" name="dETarih" >
+            <property name="calendarPopup" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" >
+           <widget class="QLabel" name="label_11" >
+            <property name="text" >
+             <string>Giriş Şekli:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="4" >
+           <widget class="QComboBox" name="cBgirissekli" >
+            <property name="editable" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" >
+           <widget class="QLabel" name="label_15" >
+            <property name="text" >
+             <string>Giriş tarihi:</string>
+            </property>
+            <property name="buddy" >
+             <cstring>dEGiris</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" colspan="4" >
+           <widget class="QDateEdit" name="dEGiris" >
+            <property name="calendarPopup" >
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" >
+           <widget class="QLabel" name="label_6" >
+            <property name="text" >
+             <string>Yayınlayan:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1" colspan="4" >
+           <widget class="QComboBox" name="CbYayinci" >
+            <property name="editable" >
+             <bool>true</bool>
+            </property>
+            <property name="modelColumn" >
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2" >
+      <property name="geometry" >
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>476</width>
+        <height>220</height>
+       </rect>
+      </property>
+      <attribute name="title" >
+       <string>Diğer Bilgiler</string>
+      </attribute>
+      <layout class="QGridLayout" >
+       <item row="0" column="0" >
+        <widget class="QLabel" name="label_13" >
+         <property name="text" >
+          <string>Ek Bilgi:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" >
+        <widget class="QTextEdit" name="ek" >
+         <property name="maximumSize" >
+          <size>
+           <width>16777215</width>
+           <height>91</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" >
+        <widget class="QLabel" name="label_16" >
+         <property name="text" >
+          <string>Yazarlar:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" >
+        <widget class="QToolButton" name="tBYazarSec" >
+         <property name="text" >
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2" >
+        <widget class="QListWidget" name="LwYazarlar" >
+         <property name="maximumSize" >
+          <size>
+           <width>209</width>
+           <height>91</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionSil" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>:/ikonlar/eraser.png</normaloff>:/ikonlar/eraser.png</iconset>
+   </property>
+   <property name="text" >
+    <string>sil</string>
+   </property>
+  </action>
+  <zorder>label_3</zorder>
+  <zorder>arama_kutusu</zorder>
+  <zorder>tablo</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>tabWidget</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>arama_kutusu</tabstop>
+  <tabstop>tablo</tabstop>
+  <tabstop>pBDegistir</tabstop>
+  <tabstop>pBKaydet</tabstop>
+  <tabstop>pBiptal</tabstop>
+  <tabstop>pBSil</tabstop>
+ </tabstops>
+ <resources>
+  <include location="ikon.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>arama_kutusu</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>tablo</receiver>
+   <slot>resizeRowsToContents()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>194</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>199</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>arama_kutusu</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>tablo</receiver>
+   <slot>resizeColumnsToContents()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>199</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>200</x>
+     <y>64</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>label_2</sender>
+   <signal>linkActivated(QString)</signal>
+   <receiver>LeBarkod</receiver>
+   <slot>setStyleSheet(QString)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>93</x>
+     <y>257</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>211</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,30 @@
+<RCC>
+  <qresource prefix="/ikonlar" >
+    <file>kitapgirissekli.png</file>
+    <file>kitapkategori.png</file>
+    <file>sinif.png</file>
+    <file>agt_business.png</file>
+    <file>agt_family.png</file>
+    <file>applixware.png</file>
+    <file>button_cancel.png</file>
+    <file>cache.png</file>
+    <file>cnr-update.png</file>
+    <file>contents.png</file>
+    <file>easymoblog.png</file>
+    <file>edit.png</file>
+    <file>edit_remove.png</file>
+    <file>eraser.png</file>
+    <file>filefind.png</file>
+    <file>fileprint.png</file>
+    <file>filesaveas.png</file>
+    <file>find.png</file>
+    <file>info.png</file>
+    <file>kedit.png</file>
+    <file>kitaplist.png</file>
+    <file>onayla.png</file>
+    <file>reload.png</file>
+    <file>share.png</file>
+    <file>uyelist.png</file>
+    <file>yayinevi.png</file>
+  </qresource>
+</RCC>

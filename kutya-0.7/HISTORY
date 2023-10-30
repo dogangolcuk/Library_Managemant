@@ -1,0 +1,24 @@
+22 Ekim 2008
+	*Raporlar kısmında arama özelliğindeki hata giderildi.
+	*Üye formundaki hata giderildi.
+01 Ağustos 2008
+	*Veritabanı kurulumu artık python ile yapılıyor.
+23 Temmuz 2008
+	*Kitap formundan kitap yayıncısı seçilirken ayrı bir form açmak yerine combobox ile seçiliyor.Burda kaydedilen daha önce kaydedilmiş yayıncı tablosundan foreign key olarak yayıncının id sidir.
+	*Tüm Raporlar tek bir form da toplandı.Yazıcı önizleme eklendi.
+25 Ağustos 2007
+	*Yazar seç formunda önceki yazarlar listeleniyor.YazarSec formuna QCloseEvent Eklendi.
+19 Ağustos 2007
+	*Yayıncı ve Yazar seç formları artık sonradan eklenen verileride anında listeliyor.Yazar seç formu değiştirildi.
+18 Ağustos 2007
+	*Kitap verilmeden önce üyedeki kitap sayısı kontrol ediliyor.Kitap limiti kutya ayar dosyasına eklendi.
+	*en çok okunan ,okuyan raporları eklendi.
+16 Ağustos 2007(V 0.3)
+	*Kitap ve Üye Listesi Raporları Eklendi.
+	*Sınıf listesi ve Kitap kategori , kitap giriş şekli  listesi xml dosyasında alınıyor(kutya.ayar)
+15 Ağustos 2007(Versiyon 0.3)
+	*Kitap formunda yayıncı id si almazsa hata veriyordu.Leyayinciid varsayılan olarak "1" olarak atandı.
+	 Yayıncı formundada başlangıc olarak "1" Diğer olarak kaydedildi.
+	*Program genel olarak kullanılabilir hale geldi.
+	*Veritabanında üyeler , kitaplar formundaki değerler(uye_id,kitap_id) odunc_al_ver tablosundan referans ediliyor.
+	 Kayıt silindiğinde kullanıcıya tüm kayıtların silineceği(odunc_al_ver den de) hatırlatılıyor. 

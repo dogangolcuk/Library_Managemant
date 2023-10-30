@@ -1,0 +1,31 @@
+(+ 16 AGU 2007 )kategoriyi text den al
+(+ 16 AGU 2007 )sınıf listesini textden al.
+(+ 15 AGU 2007)kitaplarda yayici int olarak geliyor .yayyıncı seçmeyince kendi rasgele rakam atıyıp böule kayıt yayınevinde yok diyor.Leyayinciid yye bir değer default değer ata.
+(+)Geri alma formunda getirilmeyen kitaplarda geri getirilecek tarihi de ekle.
+(+)yazar seç formunu düzelt.
+(+ 16 AGU 2007)Üye listesi
+(+ 16 AGU 2007)kitap listesi
+(+)getirilmeyenler listesi
+(+)en çok kitap alanlar listesi
+(+)en çok okunan kitaplar
+(+)(Not: siliyor ama uyarıyor.)bir üye kitabı getirmediyse onu sileme on delete restrict.
+getirdi butonu gibi , hata düzeltmek için getirilmedi ekle.
+(+)bu üye zaten 3 tane kitap getirmemiş gibi uyarı ekle.
+(+)html rapor çıktısı al. 
+(+)tablewiev lerde header lara tıklanınca sıralama yapsın.
+
+yeni ikonlar bul.
+
+daha çok rapor yaz.
+
+bulunduğun line edit renklensin.
+subwindowlar ikonları qt nin varsayılan ikonu çıkıyor.Düzelt.
+mesela bir üye ekledim .ödünç ver sayfasını güncellesin.sinyal yolla ben değiştim diye.güncelleme çalışsın.
+	yeni kayıta tıklandığında mevcut yazılanlar silinmesin.
+veritabanı yedekleme , restore etme aracı yap.
+
+	pg_dump kutuphane --file=/home/qwert/MyProgs/Kutya/kutyadb.backup --host=localhost --port=5432 -U postgres --format=c --compress=9 --verbose
+
+programın şifrelemesini yap.
+
+formOduncver gibi dosyalarada diğerleri gibi  oduncver.h ve oduncver.cpp dosyası oluştur. kaydet güncelle gibi işlemler olsun.
